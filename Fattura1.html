@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Fattura </title>
+  <script src="fattura.js"></script>
+</head>
+<body>
+<form>
+<table border="2" width= "50">
+    <tr>
+       <td align ="center"> Intestatario azienda srl<br> via dei mille <br>cell 333.3333333 </td>
+       <th colspan =" 2"> fattura</th>
+    </tr>
+   <tr>
+      <td colspan=" 2"></td>
+      <th> data</th>
+      <td><input type= "date" name = "data"></td>
+   </tr>
+   <tr>
+     <td colspan =" 2"><b>dati del cliente:</b></td>
+     <th> numero fattura</th>
+     <td colspan = "2"><input type = "text" ></td>
+   </tr>
+  <tr>
+     <td colspan="3"> cognome e nome <input type ="text"></td>
+   </tr>
+   <tr>
+     <td colspan="3"> indirizzo <input type ="text"></td>
+   </tr>
+   <tr>
+     <td colspan="3"> citta' <input type ="text"></td>
+   </tr>
+   <tr>
+    <th>descrizione</th>
+    <th>quantità</th>
+    <th>prezzo unitario</th>
+    <th>importo</th>
+  </tr>
+ <tr>
+      <td><input type = "text"></td>
+      <td><input type = "text" id="q" value="0"></td>
+      <td><input type = "text" id="p" value="0" ></td>
+      <td><input type = "text" id="importo" value="0" ></td>
+</tr>
+<td><input type = "text" ></td><td><input type = "text" id="q2" value="0"></td><td><input type = "text" id="p2" value="0"  ></td><td><input type = "text" id="importo2" value="0" ></td>
+</tr>
+<td><input type = "text" ></td><td><input type = "text" id="q3" value="0"></td><td><input type = "text" id="p3" value="0"  ></td><td><input type = "text" id="importo3" value="0" ></td>
+</tr>
+<tr>
+<td colspan = "2" rowspan = "3"></td> <td rowspan= "3">imponibile<br>percentuale iva<br>totale fattura</td>
+<td><input type = "text" id="imponibile" value="0" ></td>
+</tr>
+<tr>
+<td><input type = "text" id="iva" value="0"></td>
+</tr>
+<tr>
+<td><input type = "text" id="tot" value="0" ></td>
+</tr>
+<tr>
+<td colspan = "4"> <input type ="button"  value = "calcola ora " onClick="fattura()"></td>
+</tr>
+</form>
+</body>
+</html>
